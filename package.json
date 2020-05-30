@@ -11,6 +11,7 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
+    "svgr": "svgr -d src/Icons/ --ignore-existing public/svg/",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -30,5 +31,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@svgr/cli": "^5.4.0"
   }
 }
