@@ -11,19 +11,21 @@
             font-size: 50%;
             letter-spacing: 1px;
             font-weight: 100;
+            color:#5d5d5d;
         }
         &__text {
-            font-size: 60%;
+            font-size: 70%;
             margin: 3% 0 0 0;
         }
         &__link {
-            font-size: 60%;
+            font-size: 70%;
             text-decoration:none;
             color: dodgerblue;
         }
     }
     .svgicon {
-        max-width: 7%;
+        max-width: 9.5%;
+        min-width: 20px
     }
     .tools {
         margin-top: 1%;
