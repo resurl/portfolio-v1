@@ -1,8 +1,34 @@
 @media only screen and (max-width: 480px) {
     .PUnit {
         margin: 0 11% 0 11%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__hint {
+            margin:0;
+            padding:0;
+            font-size: 50%;
+            letter-spacing: 1px;
+            font-weight: 100;
+        }
         &__text {
             font-size: 60%;
+            margin: 3% 0 0 0;
         }
+        &__link {
+            font-size: 60%;
+            text-decoration:none;
+            color: dodgerblue;
+        }
+    }
+    .svgicon {
+        max-width: 7%;
+    }
+    .tools {
+        margin-top: 1%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
     }
 }

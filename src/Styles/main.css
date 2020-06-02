@@ -136,9 +136,50 @@
 @media only screen and (max-width: 480px) {
   .PUnit {
     margin: 0 11% 0 11%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .PUnit__hint {
+    margin: 0;
+    padding: 0;
+    font-size: 50%;
+    letter-spacing: 1px;
+    font-weight: 100;
   }
   .PUnit__text {
     font-size: 60%;
+    margin: 3% 0 0 0;
+  }
+  .PUnit__link {
+    font-size: 60%;
+    text-decoration: none;
+    color: dodgerblue;
+  }
+  .svgicon {
+    max-width: 7%;
+  }
+  .tools {
+    margin-top: 1%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 

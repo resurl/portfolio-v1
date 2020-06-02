@@ -4,7 +4,7 @@ function SvgElectron(props) {
   return (
     <svg id="electron_svg__Electron" viewBox="0 0 128 128" {...props}>
       <defs>
-        <style>{".electron_svg__cls-1{fill:#47848f}"}</style>
+        <style>{".electron_svg__cls-1{fill:#65507E}"}</style>
       </defs>
       <g id="electron_svg__original">
         <path
