@@ -4,7 +4,7 @@ import Linkedin from '../Icons/Linkedin'
 
 export default function Contact() {
     return (
-        <div className="Contact">
+        <div className="Contact" id="Contact">
             <p className="Contact__header">Interested in working together? Let's talk!</p>
             <a href="mailto:leanna.resurreccion@gmail.com" className="Contact__button">Email</a>
             <div className="Contact_social">

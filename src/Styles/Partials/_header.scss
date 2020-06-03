@@ -17,8 +17,88 @@
     }
 }
 
-@media only screen and (max-width:480px) {
+@media only screen and (min-width: 481px) {
+    .Header {
+        background-color: #fff;
+        position:relative
+    }
+    .MobileHero {
+        display:none;
+    }
+
+    .wrapper {
+        margin-left:30%;
+    }
+
+    .Header__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+        width: 40%;
+        padding-top:5%;
+        &-head {
+            font-size: 250%;
+            margin:0;
+            padding: 0;
+            line-height:120%;
+        }
+
+        &-body {
+            margin: 0;
+            padding: 0;
+            letter-spacing: 0.2em;
+        }
+    }
+
+    .Header__blobs {
+        display:flex;
+        justify-content: space-between;
+        margin-top:-5%;
+        &-home {
+            position: absolute;
+            margin: -18.5% 0 18.5% -1.5%;
+            padding: 0;
+            z-index: 99;
+            font-family: "Shrikhand";
+            font-size: 200%;
+            color: #fff;
+            text-decoration:none;
+        }
+    }
+
+    .blob {
+        width: 20%;
+        height: 20%;
+    }
+
+    .Leftblob {
+        margin-left:-3%;
+        width: 23%;
+    }
+
+    .Middleblob {
+        margin-left:2%;
+    }
+
+    .Rightblob {
+        margin-top:-1.5%;
+        margin-right: -3%;
+        width:27.5%;
+    }
+
     .BigHero {
+        float:right;
+        margin: 0 20% 0 0;
+    }
+    .Header__more {
+        padding-top: 10%;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .BigHero, .Leftblob, .Rightblob, .Middleblob, .Header__blobs-home {
         display: none;
     }
 
