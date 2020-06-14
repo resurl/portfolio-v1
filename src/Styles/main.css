@@ -34,6 +34,8 @@
   .Header {
     background-color: #fff;
     position: relative;
+    height: 100vh;
+    scroll-snap-align: start;
   }
   .MobileHero {
     display: none;
@@ -81,7 +83,7 @@
   }
   .Header__blobs-home {
     position: absolute;
-    margin: -18.5% 0 18.5% -1.5%;
+    margin: -16.5% 0 18.5% -1.5%;
     padding: 0;
     z-index: 99;
     font-family: "Shrikhand";
@@ -91,11 +93,11 @@
   }
   .blob {
     width: 20%;
-    height: 20%;
+    height: 17%;
   }
   .Leftblob {
     margin-left: -3%;
-    width: 23%;
+    width: 20%;
   }
   .Middleblob {
     margin-left: 2%;
@@ -103,7 +105,7 @@
   .Rightblob {
     margin-top: -1.5%;
     margin-right: -3%;
-    width: 27.5%;
+    width: 24.5%;
   }
   .BigHero {
     float: right;
@@ -138,7 +140,7 @@
   .Navigation {
     position: relative;
     z-index: 98;
-    margin: -31% 5% 44% 5%;
+    margin: -30% 5% 44% 5%;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -189,17 +191,28 @@
         -ms-flex-align: center;
             align-items: center;
     margin: 0 10%;
-    padding-top: 5%;
+    height: 100vh;
+    scroll-snap-align: start;
   }
   .Intro__img {
     max-width: 30%;
+  }
+  .Intro__text {
+    margin: 2.5em;
+    text-align: left;
+    font-size: 150%;
+  }
+  .Intro__text-head {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    font-size: 120%;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .Intro {
     max-width: 100%;
-    height: 40%;
+    height: 25%;
     margin: 9.5% 11%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -239,6 +252,36 @@
   }
 }
 
+@media only screen and (min-width: 481px) {
+  .Projects {
+    scroll-snap-align: start;
+    margin: 0 11%;
+    padding: 8% 0;
+  }
+  .Projects__head {
+    font-size: 200%;
+    font-family: "Shrikhand";
+  }
+  .Projects__section {
+    margin-bottom: 10%;
+  }
+  .Projects__section-head {
+    font-size: 150%;
+    font-weight: bold;
+  }
+  .Projects__section-img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    padding: 0 6% 0 0;
+    max-width: 50%;
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .Projects__head {
     margin: 0;
@@ -259,9 +302,66 @@
   }
 }
 
+@media only screen and (min-width: 481px) {
+  .PUnit {
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .PUnit__text {
+    font-size: 130%;
+    font-weight: 300;
+    margin: 0;
+    letter-spacing: 0.03em;
+  }
+  .PUnit__langs {
+    margin-top: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 120%;
+    width: 100%;
+  }
+  .PUnit__langs span {
+    padding-right: 2%;
+    width: 17%;
+  }
+  .PUnit a {
+    text-decoration: none;
+    color: dodgerblue;
+    font-size: 120%;
+  }
+  .svgicon {
+    max-width: 5.5%;
+    min-width: 30px;
+  }
+  .svgicon svg {
+    display: block;
+  }
+  .tools {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .PUnit {
-    margin: 0 11% 0 11%;
+    margin: 0 11% 7% 11%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -276,10 +376,20 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .PUnit__hint {
+  .PUnit__langs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 0;
     padding: 0;
-    font-size: 50%;
+    width: 100%;
+    font-size: 60%;
     letter-spacing: 1px;
     font-weight: 100;
     color: #5d5d5d;
@@ -298,6 +408,8 @@
     min-width: 20px;
   }
   .tools {
+    white-space: nowrap;
+    margin-left: 1.5%;
     margin-top: 1%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -308,6 +420,55 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media only screen and (min-width: 481px) {
+  .Contact {
+    scroll-snap-align: end;
+    margin: 0 10%;
+    padding: 0 0 10% 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Contact__header {
+    font-size: 150%;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+  }
+  .Contact__button {
+    text-decoration: none;
+    background-color: #676fb0;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    font-size: 150%;
+    padding: 1.5% 0;
+    margin-bottom: 1.5%;
+    max-width: 50%;
+    width: 25%;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 4px 7px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 4px 7px 0 rgba(0, 0, 0, 0.2);
+  }
+  .Contact__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .Contact__social a {
+    font-size: 170%;
   }
 }
 
@@ -347,7 +508,25 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font: 200 20px "Source Sans Pro", sans-serif;
+  font: 300 20px "Source Sans Pro", sans-serif;
   overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+@media only screen and (max-width: 480px) {
+  .App {
+    overflow-y: scroll;
+    height: 100vh;
+  }
+}
+
+@media only screen and (min-width: 481px) {
+  .App {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100vh;
+    -ms-scroll-snap-type: y proximity;
+        scroll-snap-type: y proximity;
+  }
 }
 /*# sourceMappingURL=main.css.map */

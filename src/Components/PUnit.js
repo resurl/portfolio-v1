@@ -36,10 +36,11 @@ export default function PUnit(props) {
     const { desc, tools, url } = props
     return (
         <div className="PUnit">
-            <p className="PUnit__hint">technologies/languages used (hover over for names)</p>
-            {tooling(tools)}
             <p className="PUnit__text">{desc}</p>
-            <a className="PUnit__link" href={url}>See it in action ></a>
+            <div>
+                <div className="PUnit__langs"><span>Built in: </span> {tooling(tools)}</div>
+                <a className="PUnit__link" href={url}>See it in action ></a>
+            </div>
         </div>
     )
 }

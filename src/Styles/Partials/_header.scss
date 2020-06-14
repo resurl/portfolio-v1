@@ -20,7 +20,9 @@
 @media only screen and (min-width: 481px) {
     .Header {
         background-color: #fff;
-        position:relative
+        position:relative;
+        height: 100vh;
+        scroll-snap-align: start;
     }
     .MobileHero {
         display:none;
@@ -58,7 +60,7 @@
         margin-top:-5%;
         &-home {
             position: absolute;
-            margin: -18.5% 0 18.5% -1.5%;
+            margin: -16.5% 0 18.5% -1.5%;
             padding: 0;
             z-index: 99;
             font-family: "Shrikhand";
@@ -70,12 +72,12 @@
 
     .blob {
         width: 20%;
-        height: 20%;
+        height: 17%;
     }
 
     .Leftblob {
         margin-left:-3%;
-        width: 23%;
+        width: 20%;
     }
 
     .Middleblob {
@@ -85,7 +87,7 @@
     .Rightblob {
         margin-top:-1.5%;
         margin-right: -3%;
-        width:27.5%;
+        width:24.5%;
     }
 
     .BigHero {

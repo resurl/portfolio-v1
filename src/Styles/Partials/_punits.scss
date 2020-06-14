@@ -1,14 +1,60 @@
+@media only screen and (min-width: 481px) {
+    .PUnit {
+        text-align: left;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &__text {
+            font-size: 130%;
+            font-weight: 300;
+            margin: 0;
+            letter-spacing: 0.03em;
+        }
+        &__langs {
+            margin-top: 10%;
+            display:flex;
+            align-items: center;
+            font-size: 120%;
+            width: 100%;
+            span {
+                padding-right: 2%;
+                width:17%
+            }
+        }
+        a {
+            text-decoration: none;
+            color:dodgerblue;
+            font-size: 120%;
+        }
+    }
+    .svgicon {
+        max-width: 5.5%;
+        min-width: 30px;
+        svg {
+            display: block
+        }
+    }
+    .tools {
+        display:flex;
+        justify-content: center;
+    }
+}
+
 @media only screen and (max-width: 480px) {
     .PUnit {
-        margin: 0 11% 0 11%;
+        margin: 0 11% 7% 11%;
         display:flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        &__hint {
+        &__langs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin:0;
             padding:0;
-            font-size: 50%;
+            width: 100%;
+            font-size: 60%;
             letter-spacing: 1px;
             font-weight: 100;
             color:#5d5d5d;
@@ -28,6 +74,8 @@
         min-width: 20px
     }
     .tools {
+        white-space: nowrap;
+        margin-left: 1.5%;
         margin-top: 1%;
         display:flex;
         justify-content: center;

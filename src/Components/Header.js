@@ -24,7 +24,6 @@ export default function Header() {
                 </div>
             </div>
             <Navigation />
-            <div className="Header__more">scroll down for the rest!</div>
         </div>
     )
 }
