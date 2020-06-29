@@ -17,6 +17,15 @@ const data = {
             tools: [
                 "py"
             ]
+        },
+        {
+            title: "Tiger Mom",
+            description: "Top 25% project at NWHacks 2020. I worked on the front-end and assisted in ideation! Tiger Mom is a web app that utilizes driver-montioring technology to gauge and improve productivity.",
+            url: "https://devpost.com/software/tiger-mom-134xqj",
+            tools: [
+                "react",
+                "js"
+            ]
         }
     ]
 }

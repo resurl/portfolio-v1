@@ -12,8 +12,8 @@ function SvgPython(props) {
         y2={1151.089}
         gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"
       >
-        <stop offset={0} stopColor="#5A9FD4" />
-        <stop offset={1} stopColor="#306998" />
+        <stop offset={0} stopColor="#896dab" />
+        <stop offset={1} stopColor="#70559e" />
       </linearGradient>
       <path
         fill="url(#python_svg__a)"
@@ -28,8 +28,8 @@ function SvgPython(props) {
         y2={1149.537}
         gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"
       >
-        <stop offset={0} stopColor="#FFD43B" />
-        <stop offset={1} stopColor="#FFE873" />
+        <stop offset={0} stopColor="#8d6ec2" />
+        <stop offset={1} stopColor="#ad90e0" />
       </linearGradient>
       <path
         fill="url(#python_svg__b)"
