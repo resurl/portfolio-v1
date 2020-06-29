@@ -41,7 +41,7 @@
     display: none;
   }
   .wrapper {
-    margin-left: 30%;
+    margin-left: 25%;
   }
   .Header__text {
     display: -webkit-box;
@@ -109,7 +109,7 @@
   }
   .BigHero {
     float: right;
-    margin: 0 20% 0 0;
+    margin: 0 18% 0 0;
   }
   .Header__more {
     padding-top: 10%;
@@ -140,7 +140,7 @@
   .Navigation {
     position: relative;
     z-index: 98;
-    margin: -30% 5% 44% 5%;
+    margin: -31% 5% 44% 5%;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -150,7 +150,7 @@
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    font-size: 120%;
+    font-size: 105%;
     margin: 0 0 0 0%;
     text-transform: uppercase;
   }
@@ -346,15 +346,19 @@
     min-width: 30px;
   }
   .svgicon svg {
-    display: block;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
   }
   .tools {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    width: auto;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -393,6 +397,9 @@
     font-weight: 100;
     color: #5d5d5d;
   }
+  .PUnit__langs span {
+    display: none;
+  }
   .PUnit__text {
     font-size: 70%;
     margin: 3% 0 0 0;
@@ -405,11 +412,13 @@
   .svgicon {
     max-width: 9.5%;
     min-width: 20px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
   }
   .tools {
+    margin-top: 2.5%;
     white-space: nowrap;
-    margin-left: 1.5%;
-    margin-top: 1%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
